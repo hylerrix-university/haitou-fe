@@ -215,17 +215,25 @@ HTTP post/get
 ## 接口名称：获取宣讲会正文
 
 * 请求地址
+
 https://corefuture.cn/ht/infor/getArticle.action
+
 * 调用方式：
+
 HTTP post/get
+
 * 接口描述：
+
 获取宣讲会正文
+
 * 请求参数:
+
 |字段名称|字段说明|类型|必填|备注|
 |----|----|----|----|----|
 |article|链接参数|string|Y|
 
 就是上面那个接口获取的articleUrl
+
 * 请求返回结果（html段）:
 
 ```html
