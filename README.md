@@ -5,13 +5,21 @@
 ## 接口名称：获取所有省信息
 
 * 请求地址
+
 https://corefuture.cn/ht/infor/getProvince.action
+
 * 调用方式：
+
 HTTP post/get
+
 * 接口描述：
+
 获取所有省信息
+
 * 请求参数: 
+
 无
+
 * 请求返回结果(JSON):
 
 ```
@@ -46,11 +54,17 @@ HTTP post/get
 ## 接口名称：获取宣讲会信息
 
 * 请求地址
+
 https://corefuture.cn/ht/infor/getTalkInfor.action
+
 * 调用方式：
+
 HTTP post/get
+
 * 接口描述：
+
 获取宣讲会信息
+
 * 请求参数:
 
 |字段名称|字段说明|类型|必填|备注|
@@ -69,7 +83,7 @@ HTTP post/get
 
 例：
 
-```
+```json
 {
   "nowPageNum": 1,
   "totalPageNum": 2,
@@ -214,7 +228,7 @@ HTTP post/get
 就是上面那个接口获取的articleUrl
 * 请求返回结果（html段）:
 
-```
+```html
 <font size="4">用人单位：
     <font size="4" color="#FF0000">天津市万盛达企业管理有限公司</font>
     <br>
