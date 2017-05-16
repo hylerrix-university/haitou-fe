@@ -1,80 +1,162 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<meta charset="UTF-8">
+	<!-- 设置编码格式 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- 启动兼容 CSS Media 媒体类型的移动设备的展示效果
+	 -- width = device-width：宽度等于当前设备的宽度
+	 -- initial-scale：初始的缩放比例（默认设置为1.0）
+	 -- minimum-scale：允许用户缩放到的最小比例（默认设置为1.0）
+	 -- maximum-scale：允许用户缩放到的最大比例（默认设置为1.0）   
+	 -- user-scalable：用户是否可以手动缩放（默认设置为no，因为我们不希望用户放大缩小页面） 
+	 -->
+	
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link rel="stylesheet" type="text/css" href="./mainwrap.css">
+	<link rel="stylesheet" type="text/css" href="./header.css">
+
 	<title>宣讲会</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+	
 </head>
 <body>
 	<div id="app">
 		<div class="mWrapApp">
 
-			<!-- 头部 logo -->
 			<div style="display: block;">
+			<!-- 头部 logo -->
 				<div class="mHeader">
 					
 				</div>
 			</div>
 
-			<div class="xjhMainWrap">
+			<div class="xjhMainWrap" style="overflow: auto;">
 			<!-- 内容主体 -->
+			<!-- overflow: 可以确定是否显示滚动条 -->
 
-				<div class="filterBoxWrap">
-					<!-- 过滤主体 -->
-					<div class="filterWrap">
-						<!-- 过滤学校 -->
+				<div class="mContentWrapAuto">
+					<div class="xjhMainLoadingWrap">
+						
 					</div>
-					<div class="filterWrap">
-						<!-- 过滤未来/过去选项 -->
+					<div class="scrollToTopBtn">
+						<img src="">
 					</div>
-					<div class="filterWarp">
-						<!-- 设置筛选条件 -->
-						<span class="filterBtnLogo">
-							<!-- 筛选条件右边的“箭头”图片 -->
-							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAV1BMVEX///+ZmZmZmZmampqZmZmZmZmampqdnZ2lpaWbm5uenp6enp6jo6OioqKpqampqamampqZmZmampqbm5ubm5udnZ2enp6goKClpaWqqqqqqqqcnJyZmZlhrhVoAAAAHHRSTlME+un24dq6XCJmTUYxLBwY1NDMenRuVEAnFRKBT5JykQAAAGlJREFUKM+F0skOgCAMBFAWxQVEVHCd//9OT8bLNPT6AmmnVX/d7lC0HKynEAzsSGUy0LLsVM4GuqPSy9ICA5UoypyAwmUBMpVrBTYJHvoVfxATkIV2izwgj6QaYj328C2KrNbXj0E8nxcLJAb+Ba+2oQAAAABJRU5ErkJggg==">
-						</span>
+					<div class="sectionTitle">
+						
 					</div>
-				</div>
+					<div class="xjhWrap">
 
-				<div class="xjhContentWrap">
-					<!-- 宣讲会主体 -->
-					<div class="xjhItemTeamWrap">
-						<!-- 某一天里的所有宣讲会信息 -->
-						<div class="xjhItemTeamDateWrap">
-					    	"2017-05-16"
-					    	"周二"
-					    </div>
-					    <!-- 某一场宣讲会 -->
-					    <a href="/xjh/466658">
-					    	<div class="xjhItemWrap">
-						    	<div class="xjhItemLogoWrap">
-						    		<img src="http://cdn6.haitou.cc/university/28.png">
-						    	</div>
-						    	<div class="xjhItemContentWrap">
-						    		<div class="xjhItemCompanyName">全国中小企业股份转让系统公司</div>
-						    		<div class="xjhItemSchoolInfoWrap">
-						    			<div class="xjhItemSchoolName">西工大</div>
-						    			<div class="xjhItemSchoolAddress">长安校区就业信息发布厅</div>
-						    		</div>
-						    		<div class="xjhItemTimeWrap">
-						    			<div class="xjhItemWeek">周二</div>
-						    			<div class="xjhItemTimePoint">xjhItemTimePoint</div>
-						    			<div class="xjhItemAboutTime">下午</div>
-						    			<div class="xjhItemDetailTime">14:00</div>
-						    			<div class="clear"></div>
-						    		</div>
-						    	</div>
-						    </div>
-					    </a>
-					</div>
+						<div class="filterBoxWrap">
+						<!-- 过滤主体 -->
 
-					<div class="loadMore">
-						点击加载更多
+							<div class="filterWrap">
+							<!-- 过滤学校 -->
+							</div>
+							<div class="filterWrap">
+							<!-- 过滤未来/过去选项 -->
+							</div>
+							<div class="filterWarp">
+							<!-- 设置筛选条件 -->
+								<span class="filterBtnLogo">
+									<!-- 筛选条件右边的“箭头”图片 -->
+									<!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAV1BMVEX///+ZmZmZmZmampqZmZmZmZmampqdnZ2lpaWbm5uenp6enp6jo6OioqKpqampqamampqZmZmampqbm5ubm5udnZ2enp6goKClpaWqqqqqqqqcnJyZmZlhrhVoAAAAHHRSTlME+un24dq6XCJmTUYxLBwY1NDMenRuVEAnFRKBT5JykQAAAGlJREFUKM+F0skOgCAMBFAWxQVEVHCd//9OT8bLNPT6AmmnVX/d7lC0HKynEAzsSGUy0LLsVM4GuqPSy9ICA5UoypyAwmUBMpVrBTYJHvoVfxATkIV2izwgj6QaYj328C2KrNbXj0E8nxcLJAb+Ba+2oQAAAABJRU5ErkJggg=="> -->
+								</span>
+							</div>
+						</div>
+
+						<div class="xjhContentWrap">
+						<!-- 宣讲会主体 -->
+
+							<div class="xjhItemTeamWrap">
+							<!-- 某一天里的所有宣讲会信息 -->
+
+								<div class="xjhItemTeamDateWrap">
+								<!-- 当天信息 -->
+							    	"2017-05-16"
+							    	"周二"
+							    </div>
+							    
+							    <a href="/xjh/466658">
+							    <!-- 某一场宣讲会 -->
+							    	<div class="xjhItemWrap">
+								    	<div class="xjhItemLogoWrap">
+								    		<img src="http://cdn6.haitou.cc/university/28.png">
+								    	</div>
+								    	<div class="xjhItemContentWrap">
+								    		<div class="xjhItemCompanyName">全国中小企业股份转让系统公司</div>
+								    		<div class="xjhItemSchoolInfoWrap">
+								    			<div class="xjhItemSchoolName">西工大</div>
+								    			<div class="xjhItemSchoolAddress">长安校区就业信息发布厅</div>
+								    		</div>
+								    		<div class="xjhItemTimeWrap">
+								    			<div class="xjhItemWeek">周二</div>
+								    			<div class="xjhItemTimePoint">(今天)</div>
+								    			<div class="xjhItemAboutTime">下午</div>
+								    			<div class="xjhItemDetailTime">14:00</div>
+								    		</div>
+								    	</div>
+
+								    	<div class="clear"></div>
+								    	<div class="xjhItemPointImgWrap">
+								    		
+								    	</div>
+								    	<div class="xjhSaveBtn">
+								    		<img src="">
+								    	</div>
+								    </div>
+							    </a>
+
+							    <a href="/xjh/466658">
+							    <!-- 某一场宣讲会 -->
+							    	<div class="xjhItemWrap">
+								    	<div class="xjhItemLogoWrap">
+								    		<img src="http://cdn6.haitou.cc/university/28.png">
+								    	</div>
+								    	<div class="xjhItemContentWrap">
+								    		<div class="xjhItemCompanyName">全国中小企业股份转让系统公司</div>
+								    		<div class="xjhItemSchoolInfoWrap">
+								    			<div class="xjhItemSchoolName">西工大</div>
+								    			<div class="xjhItemSchoolAddress">长安校区就业信息发布厅</div>
+								    		</div>
+								    		<div class="xjhItemTimeWrap">
+								    			<div class="xjhItemWeek">周二</div>
+								    			<div class="xjhItemTimePoint">(今天)</div>
+								    			<div class="xjhItemAboutTime">下午</div>
+								    			<div class="xjhItemDetailTime">14:00</div>
+								    		</div>
+								    	</div>
+
+								    	<div class="clear"></div>
+								    	<div class="xjhItemPointImgWrap">
+								    		
+								    	</div>
+								    	<div class="xjhSaveBtn">
+								    		<img src="">
+								    	</div>
+								    </div>
+							    </a>
+
+							</div>
+
+							<div class="loadMore">
+								点击加载更多
+							</div>
+						</div>
+
 					</div>
 				</div>
 
 				<div class="XJHZPHRightTabWrap">
-					
+				<!-- 隐藏的右侧菜单 -->
+					<div class="XjhFilterTabWrap">
+						<div class="XjhFilterTabHeader">
+							
+						</div>
+						<div class="XjhFilterTabContent">
+							
+						</div>
+					</div>
 				</div>
 				
 			</div>
