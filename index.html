@@ -13,9 +13,12 @@
 	 -- user-scalable：用户是否可以手动缩放（默认设置为no，因为我们不希望用户放大缩小页面） 
 	 -->
 	
-	<link rel="stylesheet" type="text/css" href="./index.css">
-	<link rel="stylesheet" type="text/css" href="./mainwrap.css">
-	<link rel="stylesheet" type="text/css" href="./header.css">
+	<link rel="stylesheet" type="text/css" href="public/css/index.css">
+	<link rel="stylesheet" type="text/css" href="public/css/mainWrap.css">
+	<link rel="stylesheet" type="text/css" href="public/css/filterBoxWrap.css">
+	<link rel="stylesheet" type="text/css" href="public/css/XjhFilterTabWrap.css">
+	<link rel="stylesheet" type="text/css" href="public/css/xjhContentWrap.css">
+	<link rel="stylesheet" type="text/css" href="public/css/header.css">
 
 	<title>宣讲会</title>
 	
@@ -27,7 +30,11 @@
 			<div style="display: block;">
 			<!-- 头部 logo -->
 				<div class="mHeader">
-					
+					<img src="data:image/png;base64,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" alt="logo" class="mHeaderLogo">
+					<div class="mHeaderMiddleTab">
+						<div></div>
+					</div>
+					<div class="clear"></div>
 				</div>
 			</div>
 
@@ -36,31 +43,68 @@
 			<!-- overflow: 可以确定是否显示滚动条 -->
 
 				<div class="mContentWrapAuto">
-					<div class="xjhMainLoadingWrap">
+					<!-- <div class="xjhMainLoadingWrap" style="display: none; height: 35.5rem; opacity: 0; transition: opacity 0.3s;">
+						<div class="spinner">
+							<div class="double-bounce1"></div>
+							<div class="double-bounce2"></div>
+						</div>
+					</div> -->
 						
 					</div>
-					<div class="scrollToTopBtn">
-						<img src="">
+
+					<div class="scrollToTopBtn" style="display: block;">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAM1BMVEUAAACXl5eYmJiYmJiampqXl5eZmZmfn5+YmJiZmZmXl5eXl5eYmJiYmJiXl5eZmZmYmJjT+Jj2AAAAEHRSTlMAwD/wMKB/ENBwYOCvj4BQVoP/BwAAAHVJREFUOMvV00sOgCAMRdFCrQh+979aiYE8kVgSB0bvSPPOgEnJiVESR7KpCRkdmPeAt1W+AJaqbBM8fGQIrAFeiTq+B9wRQQCUOwQA9iTGEmDPuaEG2CEAsENcwNTH8rrE7xkAZXD8/BbY1Bl84i5ax9s8/x1gkCxotdDTyAAAAABJRU5ErkJggg==" alt="" data-pin-nopin="true">
 					</div>
-					<div class="sectionTitle">
+					<div class="sectionTitle" style="display: block;">
 						
 					</div>
-					<div class="xjhWrap">
+					<div class="xjhWrap" style="margin: 0px; width: 100%;">
 
 						<div class="filterBoxWrap">
 						<!-- 过滤主体 -->
 
-							<div class="filterWrap">
+							<div class="filterWrap" style="display: block">
 							<!-- 过滤学校 -->
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAdVBMVEX/////bCL/0rv//fv/9/P/vp3/iEz/ejf/rIL/dzL/dS//cyz/4dH/u5n/rYT/j1b/byf/8er/5tn/5Nb/3Mr/x6r/oXH/nWv/lV//gUL/fj3/yrD/mWb/6d7/t5L/pnj/mGP/+vj/7eT/3s7/0Lj/w6T/iEt8wXmzAAAA8klEQVQoz82Q25LCIAxAEyliS1mg90JrrZf9/0/cOJQVZ/TV8TxyMkxy4FNUfMrziVcv1Hzrc9zI+9ucqHPbCSSKE69rfiqQEF17hjvcISEHVbIwzUo1SCQcB1CIRh8bUimsOWqDqMChX+Elq0cHUjJ4A5MSBvxNv06/3+MAlUgWi2zLCUqQxbMoyBYnnpaF4R3qEEX0vQhhNO6g9FEfAEKQEAfgh7Q260MT7ML55b5D0HvMEh35dn1IdIlj9myzEct/DSOO16Q5u9IDPHRNScXSNrO1c9MugrJSOTXFedsZTDCdhWesX7QrjCmcXryFT/AHVUcOc/dg/W8AAAAASUVORK5CYII=">
+								<div class="filterSelectedWrap">
+									<div class="innerFilterSelectedWrap">
+										<div class="filterSelectedBox">西大</div>
+										<div class="filterSelectedBox">交大</div>
+										<div class="filterSelectedBox">西工大</div>
+										<div class="filterSelectedBox">西电</div>
+										<div class="filterSelectedBox">西农</div>
+										<div class="filterSelectedBox">陕师</div>
+										<div class="filterSelectedBox">建大</div>
+										<div class="filterSelectedBox">理工大</div>
+										<div class="filterSelectedBox">西工程</div>
+										<div class="filterSelectedBox">西外</div>
+										<div class="filterSelectedBox">西财</div>
+										<div class="filterSelectedBox">西法大</div>
+										<div class="filterSelectedBox">长大</div>
+										<div class="filterSelectedBox">西工院</div>
+										<div class="filterSelectedBox">陕科大</div>
+										<div class="filterSelectedBox">西科大</div>
+										<div class="filterSelectedBox">西邮</div>
+									</div>
+								</div>
 							</div>
+
 							<div class="filterWrap">
 							<!-- 过滤未来/过去选项 -->
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAe1BMVEX/////bCL/5Nb/cir/byb/+vf/djD/4tL//fz/vZz/lWD/hET/3cv/u5j/klv/hUf/7+b/7OL/ejb/0bn/59r/2cb/zrX/wqL/tpH/roX/rIL/mWT/gkP/eDT/38//073/y7H/uZX/j1b/hkn/9e//28j/ya3/jVT/iErS7nqiAAABHElEQVQoz42S2baCMAwAO7ZUCrKICy7geq/6/18oe3uAB+elDXNIk5yIn1kc4lDLIj4sZuQmYSDcjGT6AOT5aMzxLIH32rWrEsK91wbePoFy5ViFMr6N/VyhBp9m6P/2mufdD5qyz/9AdXYN6yHhu6sZTN8bLLtrDm39CaE/1X71uT63cBNTLfZQz+eO9Oa0JzlUR0Ag5rQ4EzdPn1z9Wlb81cGxeVwTObpF1e0Z9Eh7GQ3S6jq59YsGm9yWZrGl2cYstjE7Fhd3LOJD4U+tH5I0lytEU22gW6kYtRvbneLhrMNuZDVZ2gcXiYrcZTIK6SzbJYPi1a/irYDsIhzSGJDBKYpOgQTiNrPl+mHgeRVTtlHwLPUzuG/Fr3wB8RwNZwMvZWgAAAAASUVORK5CYII=">
+								<div class="filterSelectedWrap">
+									<div class="innerFilterSelectedWrap">
+										<div class="filterSelectedBox">未来信息</div>
+									</div>
+								</div>
 							</div>
-							<div class="filterWarp">
+
+							<div class="filterBtn">
 							<!-- 设置筛选条件 -->
+								设置筛选条件
 								<span class="filterBtnLogo">
 									<!-- 筛选条件右边的“箭头”图片 -->
-									<!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAV1BMVEX///+ZmZmZmZmampqZmZmZmZmampqdnZ2lpaWbm5uenp6enp6jo6OioqKpqampqamampqZmZmampqbm5ubm5udnZ2enp6goKClpaWqqqqqqqqcnJyZmZlhrhVoAAAAHHRSTlME+un24dq6XCJmTUYxLBwY1NDMenRuVEAnFRKBT5JykQAAAGlJREFUKM+F0skOgCAMBFAWxQVEVHCd//9OT8bLNPT6AmmnVX/d7lC0HKynEAzsSGUy0LLsVM4GuqPSy9ICA5UoypyAwmUBMpVrBTYJHvoVfxATkIV2izwgj6QaYj328C2KrNbXj0E8nxcLJAb+Ba+2oQAAAABJRU5ErkJggg=="> -->
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAV1BMVEX///+ZmZmZmZmampqZmZmZmZmampqdnZ2lpaWbm5uenp6enp6jo6OioqKpqampqamampqZmZmampqbm5ubm5udnZ2enp6goKClpaWqqqqqqqqcnJyZmZlhrhVoAAAAHHRSTlME+un24dq6XCJmTUYxLBwY1NDMenRuVEAnFRKBT5JykQAAAGlJREFUKM+F0skOgCAMBFAWxQVEVHCd//9OT8bLNPT6AmmnVX/d7lC0HKynEAzsSGUy0LLsVM4GuqPSy9ICA5UoypyAwmUBMpVrBTYJHvoVfxATkIV2izwgj6QaYj328C2KrNbXj0E8nxcLJAb+Ba+2oQAAAABJRU5ErkJggg==">
 								</span>
 							</div>
 						</div>
@@ -73,8 +117,8 @@
 
 								<div class="xjhItemTeamDateWrap">
 								<!-- 当天信息 -->
-							    	"2017-05-16"
-							    	"周二"
+							    	2017-05-16
+							    	周二
 							    </div>
 							    
 							    <a href="/xjh/466658">
@@ -137,6 +181,42 @@
 								    </div>
 							    </a>
 
+							    <div class="xjhItemTeamDateWrap">
+								<!-- 当天信息 -->
+							    	"2017-05-16"
+							    	"周二"
+							    </div>
+							    
+							    <a href="/xjh/466658">
+							    <!-- 某一场宣讲会 -->
+							    	<div class="xjhItemWrap">
+								    	<div class="xjhItemLogoWrap">
+								    		<img src="http://cdn6.haitou.cc/university/28.png">
+								    	</div>
+								    	<div class="xjhItemContentWrap">
+								    		<div class="xjhItemCompanyName">全国中小企业股份转让系统公司</div>
+								    		<div class="xjhItemSchoolInfoWrap">
+								    			<div class="xjhItemSchoolName">西工大</div>
+								    			<div class="xjhItemSchoolAddress">长安校区就业信息发布厅</div>
+								    		</div>
+								    		<div class="xjhItemTimeWrap">
+								    			<div class="xjhItemWeek">周二</div>
+								    			<div class="xjhItemTimePoint">(今天)</div>
+								    			<div class="xjhItemAboutTime">下午</div>
+								    			<div class="xjhItemDetailTime">14:00</div>
+								    		</div>
+								    	</div>
+
+								    	<div class="clear"></div>
+								    	<div class="xjhItemPointImgWrap">
+								    		
+								    	</div>
+								    	<div class="xjhSaveBtn">
+								    		<img src="">
+								    	</div>
+								    </div>
+							    </a>
+
 							</div>
 
 							<div class="loadMore">
@@ -147,14 +227,77 @@
 					</div>
 				</div>
 
-				<div class="XJHZPHRightTabWrap">
+				<div class="XJHZPHRightTabWrap" style="transition: left 0.5s; left: 0%;">
 				<!-- 隐藏的右侧菜单 -->
 					<div class="XjhFilterTabWrap">
 						<div class="XjhFilterTabHeader">
-							
+							<div class="XjhFilterTabHeaderBack">
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAGFBMVEUAAAD///////////////////////////8jfp1fAAAAB3RSTlMAEGDQoHBQdPhTdQAAADhJREFUKM9joAQwKaAJqBehKShHE1AvVxh0CtjKS1EVMJoXC6CKCJcbDmYlJQxoSqAqEEoEyI1iAD41EkolH/8kAAAAAElFTkSuQmCC">
+								返回
+							</div>
+							<div class="XjhFilterTabHeaderEnter">
+								确定
+							</div>
 						</div>
-						<div class="XjhFilterTabContent">
-							
+						<div class="XjhFilterTabContent" style="height: 65.9rem;">
+							<div class="XjhFilterTabContentSelectTabWrap">
+								<div class="XjhFilterTabContentSelectTab XjhFilterTabContentSelectTabActive">信息来源</div>
+								<!-- <div class="XjhFilterTabContentSelectTab">时间模式</div> -->
+								<div class="XjhFilterTabContentSelectTab"></div>
+								<div class="XjhFilterTabContentSelectTabWrapBottom" style="left: 15%; transition: left 0.5s;"></div>
+							</div>
+							<div class="XjhFilterTabContentSelectWrap">
+								<div class="XjhFilterTabContentSelectWrapInner" style="left: 0%; transition: left 0.5s;">
+									<div class="XjhFilterTabContentSelect" style="width: 100%px;">
+									<!-- 信息来源选项卡 -->
+										<div class="xxlyWrap">
+											<!-- <div class="xxlySelectedWrap">
+												<div class="xxlySelectedInnerWrap">
+													<div class="xxlySelectedInnerTitle">
+														<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAQMAAADaua+7AAAABlBMVEX///+ZmZmOUEqyAAAADklEQVQI12NgsGOgJQYAF28F0W+V8McAAAAASUVORK5CYII=">
+														已选中(
+														17
+														/
+														17
+														)
+													</div>
+												</div>
+												<div class="xxlySelectedInnerContent">
+													<div class="univSelectedItem" style="transition: all 0.2s;">陕西地区全部高校</div>
+													<div class="clear"></div>
+												</div>
+											</div> -->
+											<div class="xxlySelectList">
+												<div class="xxlyProvinceListWrap">
+													<div class="xxlyProvinceItemWrap xxlyProvinceItemWrapActive">北京</div>
+													<div class="xxlyProvinceItemWrap">上海</div>
+													<div class="xxlyProvinceItemWrap">广州</div>
+													<div class="xxlyProvinceItemWrap">湖北</div>
+													<div class="xxlyProvinceItemWrap">广州</div>
+													<div class="xxlyProvinceItemWrap">陕西</div>
+													<div class="xxlyProvinceItemWrap">四川</div>
+													<div class="xxlyProvinceItemWrap">江苏</div>
+												</div>
+												<!-- <div class="xxlyUnivListWrap xxlyUnivItemWrapActive">
+													<div class="xxlyUnivItemWrap">
+														"全部"
+													</div>
+													<div class="xxlyUnivItemWrap">清华大学</div>
+												</div> -->
+											</div>
+										</div>
+									</div>
+									<!-- <div class="XjhFilterTabContentSelect" style="width: 100%;">
+										<div class="timeWrap">
+											<div class="timeTabItem">过去</div>
+											<div class="timeTabItem timeTabItemActive">
+												"未来"
+											</div>
+											<div class="timeTabItem">收藏</div>
+										</div>
+									</div> -->
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
