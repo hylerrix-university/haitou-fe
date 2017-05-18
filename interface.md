@@ -13,7 +13,7 @@
 
 * 请求地址
 
-https://corefuture.cn/ht/infor/getProvince.action
+https://javaapi.changxiaoyuan.com/ht/infor/getProvince.action
 
 * 调用方式：
 
@@ -62,7 +62,7 @@ HTTP post/get
 
 * 请求地址
 
-https://corefuture.cn/ht/infor/getTalkInfor.action
+https://javaapi.changxiaoyuan.com/ht/infor/getTalkInfor.action
 
 * 调用方式：
 
