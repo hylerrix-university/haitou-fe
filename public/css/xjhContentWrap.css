@@ -112,13 +112,6 @@ a, a:active, a:focus, a:hover {
     color: #f76120;
 }
 
-.clear {
-    width: 0;
-    height: 0;
-    clear: both;
-    /* clear: 规定元素的哪一侧不允许其他浮动元素 */
-}
-
 .xjhContentWrap .xjhItemTeamWrap .xjhItemWrap .xjhItemPointImgWrap {
     position: absolute;
     top: .9rem;

@@ -5,10 +5,10 @@
 > * [海投网 - PC版(jQuery Angular BootStrap)](http://xjh.haitou.cc/)
 > * [海投网 - 手机版(React)](http://m.haitou.cc/xjh)
 
-## 技术栈
+## 技术点
 
 * 原生 HTML，CSS，JS
-* Ajax
+* Ajax jsonp
 
 后台使用 JAVA 爬虫并提供接口
 
