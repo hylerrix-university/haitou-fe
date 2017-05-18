@@ -223,7 +223,7 @@ HTTP post/get
 
 * 请求地址
 
-https://corefuture.cn/ht/infor/getArticle.action
+https://javaapi.changxiaoyuan.com/ht/infor/getArticle.action
 
 * 调用方式：
 
