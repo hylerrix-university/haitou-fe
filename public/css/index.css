@@ -2,27 +2,24 @@
  * screen: 告知设备在打印页面时使用衬线字体，在屏幕上显示时用无衬线字体;
  * max-width: 表示在这个宽度之下所触发 ;
  */
-@media screen and (min-width: 570px) {
-    body{
-        background: #fff;
-    }
 
+html {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 569px) {
     html {
         font-size: 35px !important;
     }
 }
 
-@media screen and (min-width: 430px) and (max-width: 570px) {
+@media screen and (min-width: 428px) and (max-width: 569px) {
     html {
         font-size: 26.75px!important;
     }
 }
 
-@media screen and (max-width: 430px) {
-    html {
-        font-size: 20px;
-    }
-}
+
 
 blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, input, legend, li, ol, p, pre, td, textarea, th, ul {
     margin: 0;
@@ -32,6 +29,7 @@ blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr
 
 body {
     overflow-x: hidden;
+    background: #f0f0f0;
 }
 
 div {

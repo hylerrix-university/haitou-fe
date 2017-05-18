@@ -40,6 +40,7 @@
     color: #666;
     display: inline-table;
     vertical-align: top;
+    /* vertical-align: 垂直对齐 */
     font-size: .6rem;
     padding: .15rem .35rem;
     margin: .2rem .25rem;
