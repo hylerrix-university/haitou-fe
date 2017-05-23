@@ -48,12 +48,12 @@ function getTalkInfor () {
 function renderTalkInfor (talkInfor) {
     var talkJSON = JSON.parse(talkInfor);
     var talkNum = talkJSON.rows.length;
-    console.log(talkJSON.rows);
+
+    var pn = document.getElementsByClassName("xjhItemTeamWrap")[0];
+    var op;
 
  	for (var i = 0; i < talkNum; i++) {
-
- 		var pn = document.getElementsByClassName("xjhItemTeamWrap")[0];
-		var op = document.createElement("div");
+		op = document.createElement("div");
 		op.innerHTML = "\
 			<a>\
 			    <!-- 某一场宣讲会 -->\
@@ -99,6 +99,11 @@ function renderTalkInfor (talkInfor) {
     	xjhItemWeek.innerHTML = talkJSON.rows[i].holdTime;
     	xjhItemTimePoint.innerHTML = "(近期)";
 	}
+
+	op = document.createElement("div");
+	op.setAttribute('class', 'loadMore');
+	op.innerHTML = "加载完成";
+	pn.appendChild(op);
 }
 
 /**
