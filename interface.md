@@ -79,8 +79,10 @@ HTTP post/get
 |province|省份的键|string|Y|从上面那个接口获取各个省份的键值对，例如河南的键为：zz|
 |pageNum|请求页码|int|Y|第一个请求参数必须为1|
 
-* 请求返回结果(JSON):
-  1. 返回参数说明：nowPageNum：当前页码
+> eg: https://javaapi.changxiaoyuan.com/ht/infor/getTalkInfor.action?province=xa&pageNum=1
+
+* 请求返回结果(JSON)参数说明:
+  1. nowPageNum：当前页码
   2. totalPageNum：总共有几页
   3. rows：宣讲会信息数组
   4. companyName：公司名
@@ -239,7 +241,9 @@ HTTP post/get
 |----|----|----|----|----|
 |article|链接参数|string|Y|
 
-就是上面那个接口获取的articleUrl
+就是上面那个接口获取的 articleUrl
+
+> eg: https://javaapi.changxiaoyuan.com/ht/infor/getArticle.action?article=/article/467481.html
 
 * 请求返回结果（html段）:
 
