@@ -55,7 +55,7 @@ function renderTalkInfor (talkInfor) {
  		var pn = document.getElementsByClassName("xjhItemTeamWrap")[0];
 		var op = document.createElement("div");
 		op.innerHTML = "\
-			<a href=\"/xjh/466658\">\
+			<a>\
 			    <!-- 某一场宣讲会 -->\
 				<div class=\"xjhItemWrap\">\
 			    	<div class=\"xjhItemLogoWrap\">\
@@ -92,13 +92,12 @@ function renderTalkInfor (talkInfor) {
 
     	xjhItemLogoWrap.children[0].src = "public/chang-logo.jpeg";
     	xjhItemCompanyName.innerHTML = talkJSON.rows[i].companyName;
-    	xjhItemSchoolName.innerHTML = "地点";
+    	xjhItemSchoolName.innerHTML = "西安";
     	// talkJSON.rows[i].xjhItemSchoolName
     	xjhItemSchoolAddress.innerHTML = talkJSON.rows[i].place;
 		// talkJSON.rows[i].xjhItemSchoolAddress
     	xjhItemWeek.innerHTML = talkJSON.rows[i].holdTime;
     	xjhItemTimePoint.innerHTML = "(近期)";
-
 	}
 }
 
