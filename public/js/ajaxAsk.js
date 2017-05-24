@@ -1,5 +1,3 @@
-
-
 /**
  * 获取宣讲会信息
  * setTalkInfor 内部分为 get 和 render 方法
@@ -42,6 +40,7 @@ function setTalkInfor () {
 				xmlhttp.open("GET", url, true);
 			    xmlhttp.send();
 		    } else {
+		    	rmLoadingInfor();
 		    	console.log(currentPage + " 个页面资源获取成功");
 		    	renderTalkInfor(totalTalkInfor);
 		    }
@@ -123,23 +122,10 @@ function renderTalkInfor (totalTalkInfor) {
 	pn.appendChild(op);
 }
 
-/**
- * 获取所有省信息
- */
-function getProvince () {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-    	provinceInfor = xmlhttp.responseText;
-    }
-}
-
-/**
- * 获取宣讲会正文
- */
-function getArticle () {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-    	var myDiv = document.getElementById("myDiv");
-    	myDiv.innerHTML = xmlhttp.responseText;
-    }
+function rmLoadingInfor () {
+    var parent = document.getElementsByClassName("xjhItemTeamWrap")[0];
+	var xmlLoading = document.getElementsByClassName("xmlLoading")[0];
+	parent.removeChild(xmlLoading);
 }
 
 window.onload = function () {
