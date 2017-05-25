@@ -84,139 +84,160 @@ HTTP post/get
   1. nowPageNum：当前页码
   2. totalPageNum：总共有几页
   3. rows：宣讲会信息数组
-  4. companyName：公司名
-  5. place：宣讲会地点
-  6. articleUrl：正文链接参数
-  7. holdTime：举办时间
+    - companyName: 公司名
+    - place: 宣讲会地点
+    - schoolName: 学校名
+    - articleUrl: 正文链接参数
+    - holdTime: 举办时间
 
 例：
 
 ```json
 {
-  "nowPageNum": 1,
-  "totalPageNum": 2,
-  "rows": [
-    {
-      "companyName": "关于邀请参加京津冀博士后人才与项目引荐会",
-      "place": "天大天津市河东区九经路25号",
-      "articleUrl": "/article/462987.html",
-      "holdTime": "2017-05-12 09:00"
-    },
-    {
-      "companyName": "众升财富北京基金销售有限公司",
-      "place": "天财公寓综合楼308",
-      "articleUrl": "/article/462381.html",
-      "holdTime": "2017-05-12 10:00"
-    },
-    {
-      "companyName": "天津市万盛达企业管理有限公司",
-      "place": "天财校区M101",
-      "articleUrl": "/article/463434.html",
-      "holdTime": "2017-05-12 13:30"
-    },
-    {
-      "companyName": "天津合盈资产管理有限公司",
-      "place": "天财校区M101",
-      "articleUrl": "/article/463036.html",
-      "holdTime": "2017-05-12 15:30"
-    },
-    {
-      "companyName": "南开大学实习双选会",
-      "place": "南开八里台校区学生活动中心一楼",
-      "articleUrl": "/article/454575.html",
-      "holdTime": "2017-05-13 09:00"
-    },
-    {
-      "companyName": "中国银联股份有限公司",
-      "place": "南开津南校区大通学生中心E305",
-      "articleUrl": "/article/464987.html",
-      "holdTime": "2017-05-14 14:30"
-    },
-    {
-      "companyName": "天津市我爱我家房地产经纪有限公司荣业大街第二分公司",
-      "place": "天财公寓综合楼308",
-      "articleUrl": "/article/465294.html",
-      "holdTime": "2017-05-15 10:00"
-    },
-    {
-      "companyName": "在线回声(天津)科技发展有限公司",
-      "place": "天财公寓综合楼302",
-      "articleUrl": "/article/465296.html",
-      "holdTime": "2017-05-15 13:30"
-    },
-    {
-      "companyName": "众望(天津)教育信息咨询有限公司",
-      "place": "天财公寓综合楼308",
-      "articleUrl": "/article/462702.html",
-      "holdTime": "2017-05-16 10:00"
-    },
-    {
-      "companyName": "天津多看科技有限公司",
-      "place": "天财公寓综合楼308",
-      "articleUrl": "/article/463344.html",
-      "holdTime": "2017-05-16 13:30"
-    },
-    {
-      "companyName": "天津红星聚优品科技有限公司",
-      "place": "天财公寓综合楼308",
-      "articleUrl": "/article/465941.html",
-      "holdTime": "2017-05-16 15:30"
-    },
-    {
-      "companyName": "天津中原物业顾问有限公司",
-      "place": "天财公寓综合楼308",
-      "articleUrl": "/article/463044.html",
-      "holdTime": "2017-05-17 10:00"
-    },
-    {
-      "companyName": "首汇焦点(北京)科技有限公司",
-      "place": "天大北洋园32楼B122",
-      "articleUrl": "/article/466168.html",
-      "holdTime": "2017-05-17 13:00"
-    },
-    {
-      "companyName": "中企动力科技股份有限公司天津第二分公司",
-      "place": "天财公寓综合楼308",
-      "articleUrl": "/article/465818.html",
-      "holdTime": "2017-05-17 13:30"
-    },
-    {
-      "companyName": "优衣库MIT",
-      "place": "天大26楼A111",
-      "articleUrl": "/article/464191.html",
-      "holdTime": "2017-05-17 15:25"
-    },
-    {
-      "companyName": "天津企元时代科技有限公司",
-      "place": "天财公寓综合楼308",
-      "articleUrl": "/article/464811.html",
-      "holdTime": "2017-05-17 15:30"
-    },
-    {
-      "companyName": "天津晟宇信息科技有限公司",
-      "place": "天财公寓综合楼308",
-      "articleUrl": "/article/456336.html",
-      "holdTime": "2017-05-18 10:00"
-    },
-    {
-      "companyName": "天津市紫鹏翔飞教育信息咨询有限公司",
-      "place": "天财公寓综合楼308",
-      "articleUrl": "/article/466134.html",
-      "holdTime": "2017-05-18 13:30"
-    },
-    {
-      "companyName": "国资系统企业、二宫中型双选会",
-      "place": "天财公寓综合楼308",
-      "articleUrl": "/article/459984.html",
-      "holdTime": "2017-05-19 14:00"
-    },
-    {
-      "companyName": "凯恩德(天津)科技有限公司",
-      "place": "天财公寓综合楼308",
-      "articleUrl": "/article/463949.html",
-      "holdTime": "2017-05-22 13:30"
-    }
-  ]
+    "nowPageNum": 1,
+    "totalPageNum": 3,
+    "rows": [
+        {
+            "companyName": "佛山市南艺之星艺术培训有限公司",
+            "place": "新勇中心(东)201",
+            "schoolName": "陕师",
+            "articleUrl": "/article/468093.html",
+            "holdTime": "2017-05-26 08:30"
+        },
+        {
+            "companyName": "大西安人力资源服务产业园(碑林园区)重点企业组团",
+            "place": "南体育馆(金花)",
+            "schoolName": "理工大",
+            "articleUrl": "/article/467995.html",
+            "holdTime": "2017-05-26 09:00"
+        },
+        {
+            "companyName": "秦川大厨农业发展有限公司",
+            "place": "活动中心302室",
+            "schoolName": "西外",
+            "articleUrl": "/article/468280.html",
+            "holdTime": "2017-05-26 09:00"
+        },
+        {
+            "companyName": "西安博创文思信息技术有限公司",
+            "place": "招聘大厅二(教学楼4C-609)",
+            "schoolName": "陕科大",
+            "articleUrl": "/article/468060.html",
+            "holdTime": "2017-05-26 09:00"
+        },
+        {
+            "companyName": "全国教师现场",
+            "place": "青年之家",
+            "schoolName": "交大",
+            "articleUrl": "/article/467497.html",
+            "holdTime": "2017-05-26 09:00"
+        },
+        {
+            "companyName": "重庆工程学院",
+            "place": "新勇中心(东)207",
+            "schoolName": "陕师",
+            "articleUrl": "/article/467798.html",
+            "holdTime": "2017-05-26 09:00"
+        },
+        {
+            "companyName": "中国工程物理研究院材料研究所实践",
+            "place": "J-604",
+            "schoolName": "西电",
+            "articleUrl": "/article/468094.html",
+            "holdTime": "2017-05-26 09:30"
+        },
+        {
+            "companyName": "上海量投网络科技有限公司",
+            "place": "友谊校区友谊校区阶五",
+            "schoolName": "西工大",
+            "articleUrl": "/article/468290.html",
+            "holdTime": "2017-05-26 10:00"
+        },
+        {
+            "companyName": "达丰(重庆)电脑有限公司",
+            "place": "招聘大厅一(教学楼4C-607)",
+            "schoolName": "陕科大",
+            "articleUrl": "/article/467859.html",
+            "holdTime": "2017-05-26 10:00"
+        },
+        {
+            "companyName": "荣盛房地产发展股份有限公司",
+            "place": "渭水校区会议中心第三会议室",
+            "schoolName": "长大",
+            "articleUrl": "/article/467079.html",
+            "holdTime": "2017-05-26 10:00"
+        },
+        {
+            "companyName": "内蒙古伊泰北牧田园资源开发有限公司",
+            "place": "就业指导中心招聘厅(南绣山活动中心内)",
+            "schoolName": "西农",
+            "articleUrl": "/article/468061.html",
+            "holdTime": "2017-05-26 10:00"
+        },
+        {
+            "companyName": "广州康佰医疗器械有限公司",
+            "place": "未央校区教2-111",
+            "schoolName": "西工院",
+            "articleUrl": "/article/464306.html",
+            "holdTime": "2017-05-26 10:00"
+        },
+        {
+            "companyName": "华北计算技术研究所硕士研究生",
+            "place": "电信学院第一会议室",
+            "schoolName": "交大",
+            "articleUrl": "/article/468023.html",
+            "holdTime": "2017-05-26 10:00"
+        },
+        {
+            "companyName": "安徽山鹰纸业股份有限公司",
+            "place": "教2-200",
+            "schoolName": "理工大",
+            "articleUrl": "/article/466990.html",
+            "holdTime": "2017-05-26 10:30"
+        },
+        {
+            "companyName": "中共广元市朝天区委组织部、广元市朝天区人力资源和社会保障局",
+            "place": "就业指导中心报告厅(南绣山活动中心内)",
+            "schoolName": "西农",
+            "articleUrl": "/article/468288.html",
+            "holdTime": "2017-05-26 10:30"
+        },
+        {
+            "companyName": "山鹰纸业",
+            "place": "长安校区就业信息发布厅",
+            "schoolName": "西工大",
+            "articleUrl": "/article/465858.html",
+            "holdTime": "2017-05-26 14:00"
+        },
+        {
+            "companyName": "佛山市南艺之星艺术培训公司",
+            "place": "活动中心302室",
+            "schoolName": "西外",
+            "articleUrl": "/article/468086.html",
+            "holdTime": "2017-05-26 14:00"
+        },
+        {
+            "companyName": "北京链家房地产经纪有限公司",
+            "place": "临潼校区就创业中心第二宣讲室(人文管理楼215室)",
+            "schoolName": "西工程",
+            "articleUrl": "/article/466379.html",
+            "holdTime": "2017-05-26 14:00"
+        },
+        {
+            "companyName": "大秦人才网组团",
+            "place": "南校区就业中心213",
+            "schoolName": "西电",
+            "articleUrl": "/article/467966.html",
+            "holdTime": "2017-05-26 14:00"
+        },
+        {
+            "companyName": "包头稀土高新技术产业开发区教育局",
+            "place": "新勇中心(东)208",
+            "schoolName": "陕师",
+            "articleUrl": "/article/468172.html",
+            "holdTime": "2017-05-26 14:30"
+        }
+    ]
 }
 ```
 
