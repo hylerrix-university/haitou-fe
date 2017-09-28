@@ -168,17 +168,11 @@ function initDetailPage (totalTalkInfor) {
 	// 获取控制弹出的所有按钮对象数组
 	var xjhContentPageA = document.getElementsByClassName('xjhContentPageA');
 
-	// 保存点击时的首页位置，方便从详情页退出时恢复页面位置
-	var homeX;
-	var homeY;
-
 	// 获取控制返回的按钮
 	var xjhContentPageTurnBack = document.getElementsByClassName('xjhContentPageTurnBack')[0];
 	// 绑定点击事件，弹出子页面
 	for(var i = 0;i < xjhContentPageA.length; i++){
 		xjhContentPageA[i].onclick = function (event) {
-			homeX = event.pageX - event.clientX;
-			homeY = event.pageY - event.clientY;
 
 		    // 详情页展示到首页 ，首页向左滑动
 		    xjhContentPageWrap.style.right = '0%';
@@ -186,19 +180,60 @@ function initDetailPage (totalTalkInfor) {
 		    // 首页在 0.5s 后隐身
 		    setTimeout(function () {
 				mWrapApp.style.display = 'none';
-		    }, 10);
+		    }, 500);
+
+		    // 以下绑定点击时平滑过渡到首页的动画
+		    //->回到顶部:
+		    // 总时间(duration): 100ms
+		    // 频率(interval): 多长时间走一步 10ms
+		    // 总距离(scrollTop): 当前的位置(当前的 scrollTop 值)-目标的位置(0) 
+		    //->步长(step): 每一次走的距离  scrollTop/duration ->每1ms走的距离* interval ->每一次走的距离
+		    var duration = 500, interval = 10, scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	        var step = (scrollTop / duration) * interval;
+
+	        //->计算完成步长后,让当前的页面每隔 interval 这么长的时间走一步: 在上一次的 scrollTop 基础上-步长
+	        var timer = window.setInterval(function () {
+	            var curTop = document.documentElement.scrollTop || document.body.scrollTop;
+	            if (curTop === 0) { //->已经到头了
+	                window.clearInterval(timer);
+	                return;
+	            }
+	            curTop -= step;
+	            document.documentElement.scrollTop = curTop;
+	            document.body.scrollTop = curTop;
+	        }, interval);
+
+	        // 在详情页的隐藏域中记录点击详情页之前的首页位置
+	        var xjhContentPageContentScrollTop = document.getElementsByClassName("xjhContentPageContentScrollTop")[0];
+	        xjhContentPageContentScrollTop.innerHTML = scrollTop;
 
 		    renderDetailInfor(totalTalkInfor, this.value);
 	    }
 	}
 	
-    // 点击之后返回主页面
+    // 点击之后返回首页点击详情页之前的首页位置
     xjhContentPageTurnBack.onclick = function () {
 		var xjhContentPageMainContent = document.getElementsByClassName("xjhContentPageMainContent")[0];
-
 		mWrapApp.style.display = 'block';
+		// 获取隐藏域中记录点击详情页之前的首页位置
+		var scrollTop = parseInt(document.getElementsByClassName("xjhContentPageContentScrollTop")[0].innerHTML);
 
-		window.scroll(homeX, homeY);
+		// 设置返回首页详情页之前的首页位置的动画
+		var duration = 500, interval = 10;
+        var step = (scrollTop / duration) * interval;
+        //->计算完成步长后,让当前的页面每隔 interval 这么长的时间走一步:在上一次的 scrollTop 的基础上-步长
+        var timer = window.setInterval(function () {
+            var curTop = document.documentElement.scrollTop || document.body.scrollTop;
+            if (curTop >= scrollTop) { //->已经到头了，由于 >= 判断最后一步会超出之前记录的位置，把超出的走回来
+            	document.documentElement.scrollTop = scrollTop;
+            	document.body.scrollTop = scrollTop;
+                window.clearInterval(timer);
+                return;
+            }
+            curTop += step;
+            document.documentElement.scrollTop = curTop;
+            document.body.scrollTop = curTop;
+        }, interval);
 
 		xjhContentPageMainContent.innerHTML = "<center>正在加载请稍后。。。</center>";
 		xjhContentPageWrap.style.right = '-100%';
